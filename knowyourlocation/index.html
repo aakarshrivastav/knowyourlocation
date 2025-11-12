@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<!-- For icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <nav>
+      <ul class="cities">
+        <li id="lon">London</li>
+        <li id="tok">Tokyo</li>
+        <li id="del">Mumbai</li>
+        <li id="Par">Paris</li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="search for city.." id="search-in">
+        <button id="button-search"><i class="fa fa-search"></i></button>
+        <button><i class="fa fa-location-dot" id="location-button"></i></button>
+        <div class="temp-toggle">
+          <span class="active">°C</span> | <span>°F</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <p class="date-time" id="dateday">Friday, 12 May 2023</p><p class="date-time" id="timee">11:44</p>
+    <h1 class="city" id="name">Berlin</h1> <h1 class="city" id="country-name">DE</h1>
+    <p class="condition" id="condition-name">Clear</p>
+    <div class="temp">
+      <img id="temp-icon" src="353.webp"></img>
+      <h2 id="bigtemp"></h2>
+    </div>
+
+    <div class="details">
+      <div><p>Real Feel</p><i class="fa fa-thermometer-half" id="real-feel"></i></div>
+      <div><p> Humidity:</p><i class="fa fa-tint" id="humi"></i></div>
+      <div><p>Wind:</p><i class="fa fa-wind" id="wind-speed"></i></div>
+    </div>
+
+    <footer>
+      <div><i class="fa fa-sun"></i> Rise: 05:15 AM</div>
+      <div><i class="fa fa-sunset"></i> Set: 08:49 PM</div>
+      <div><i class="fa fa-arrow-up"></i> High: 23°</div>
+      <div><i class="fa fa-arrow-down"></i> Low: 19°</div>
+    </footer>
+  </main>
+</div>
+<script src="first.js"></script>
+
+</body>
+</html>
